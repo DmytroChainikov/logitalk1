@@ -52,7 +52,7 @@ class MainWindow(CTk):
        
         self.message_entry.bind("<Return>", self.send_message)
        
-        self.send_btn = CTkButton(self, text=">", width=50, height=40, command=self.send_message)
+        self.send_btn = CTkButton(self, text="", image=CTkImage(Image.open('mail.png'), size=(40,40)), width=50, height=40, command=self.send_message)
         self.send_btn.place(x=0, y=0)
        
         self.send_img_btn = CTkButton(self, text="📂", width=50, height=40, command=self.send_img)
